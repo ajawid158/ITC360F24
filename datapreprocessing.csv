@@ -1,0 +1,21 @@
+Gender,Age,Height,Weight,GPA,FA,Major,Minor,Clevel,Course,Empl
+Male,22,170,70,3.2,70,ITC,No,Sophomore,5,No
+Male,21,185,80,3.9,100,BBA,Yes,Senior,3,Yes
+Male,20,186cm,67,3.62,100,ITC,No,Junior,5,No
+Male,20,172,60,3.7,100,ITC,No,NA,5,Male
+Male,21,181,76,3.1,60%,BBA,Yes,Junior,5,No
+Female,22,58,46,3.5,scholarship ,BBA,Yes,Junior,5,No
+Female,NA,164,NA,NA,100,NA,Yes,Sophomore,NA,No
+Female,22,160,60,2.9,50,ITC,No,Sophomore,5,Yes
+Child,23,175,Male,2.8,IT,ITC,No,Junior,NA,No
+Male,21,180,65,3.18,60,ITC,No,Senior,5,No
+Female,21,164 cm ,NA,3.2,Scholarship,BBA,Yes,Sophomore,5,No
+Male,21,180,65,2.9,100,ITC,No,Junior,4,No
+Male,20,180,60,3.7,Scholarship,ITC,No,Junior,Four ,Yes
+Male,NA,175,175,3.5,100,ITC,No,Junior,4,No
+Female,22,6,54,3.4,Scholarship,Sophmore,Yes,NA,5,Female
+Female,22,158,49,3.4,70%,BBA,Yes,Sophomore,5,No
+Male,27,6.2,78,2.88,50,BBA,Yes,Senior,5,Yes
+Female,22,158,59,3.1,100%,ITC,No,Sophomore,4,No
+Female,24,159,56,2.67,No,ITC,No,Junior,Five Courses,Yes
+Male,20,180,60,-3.7,100,ITC,No,Junior,4,Yes
