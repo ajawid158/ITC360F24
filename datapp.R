@@ -84,11 +84,11 @@ table(dp_object)
 y[duplicated(y), ]   #this gives the duplicated rows with all details
 
 ###how to remove duplicated Rows/Objects
-y_unique=unique(y)
-y_dup=duplicated(y_unique)
+y_u=unique(y)
+y_dup=duplicated(y_u)
 table(y_dup)
 
-##few variables but a lot of observation/objects
+
 ##+++++++++++++++++
 #+Chapter 2: Data pre processing+#
 #Missing Values#
@@ -103,6 +103,7 @@ View(x)   ##missing values present
 is.na(x)
 colSums(is.na(x))   #it gives the # of NAs in each col.
 sum(is.na(x$Gender))  #for indiv col.
+sum(is.na(x))   #for the entire dataset
 
 md.pattern(x)
 
@@ -155,8 +156,12 @@ chisq.test(x$Gender, dum_na)  #No association, i.e. random missing values
 t.test(x$Height~dum_na)   ##Hence no association, i.e. random missing values
 ###if the missing values are at random then we can impute them>>estimate them
 ##mice package
+names(x)
+
 help("mice")
 
+#If missing values are random, you can estimate most of the missing the values
+#using
 x.fill=mice(x)
 x.cmpl=complete(x.fill)
 colSums(is.na(x.cmpl))
