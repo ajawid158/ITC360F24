@@ -54,14 +54,15 @@ filter(dfTips, day %in% c('Sun','Sat'))
 
 #for numerical >, <, ==
 filter(dfTips, size<4)
-filter(dfTips, tip>=6)
-
+x1=filter(dfTips, tip>=6)
+x1
 #Arrange
 names(dfTips)
 View(dfTips)
+head(dfTips, 10)
 
 head(arrange(dfTips, -desc(tip)))
-tail(arrange(dfTips, desc(tip)))
+head(arrange(dfTips, desc(tip)))
 head(arrange(dfTips, sex))   #decode the values F=1 Male 0
 
 View(dfTips)
@@ -111,7 +112,7 @@ gender=group_by(dfTips, sex)
 
 summarise(gender, mean(total_bill), sd(total_bill))
 smoker=group_by(dfTips, smoker)
-summarise(smoker, mean(tip), sd(tip))
+summarise(smoker, mean(total_bill), sd(total_bill))
 names(dfTips)
 
 #pull a column as a vector 

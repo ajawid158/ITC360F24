@@ -188,6 +188,8 @@ plot(density(x$Age), col="blue") #may be out-liers on the righthandside
 boxplot(x$Age, horizontal = T)
 boxplot.stats(x$Age)
 
+x_out=boxplot.stats(x$Age)[4]
+min(x_out$out)
 ###We remove the outliers only from Age
 age_new=x$Age[x$Age<24]
 boxplot(age_new, horizontal = T)
@@ -223,6 +225,7 @@ View(x)
 ##Gender
 factor(x$Gender)
 levels(x$Gender)
+help("levels")
 ##0: Female, 1: Male
 Gender_new=c()    ##empty vector 
 
