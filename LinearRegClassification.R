@@ -7,7 +7,8 @@ head(x)
 View(x)
 
 
-#problem:::predict the class of employees in terms of whether they go to gym or not
+#problem:::predict the class of employees in terms of whether they go to
+  #gym or not
 
 #Y=Gym [yes=1. no=0]
 #X=Gender, Age, Weight, Whr
@@ -36,7 +37,7 @@ gym_pred
 x.test$Gymcode
 
 table(x.test$Gymcode, gym_pred)   #confussion matrix
-##wrog classifications 4/6=0.67%      Error Rate
+##wrog classifications      Error Rate
 plot(x.test$Age, x.test$Gymcode, col='red', pch=16)
 points(x.test$Age, gym_pred, col='green', lwd=3)
 
