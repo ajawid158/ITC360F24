@@ -21,7 +21,7 @@ x.train=x[s,]
 x.test=x[-s,]
 
 View(x.train)
-
+View(x.test)
 ##Predict the MS of the employees let say using their Age, Gender, Salary
 #Model 0 Whether sobd going to gym or NOT?
 #we think that younger people are more likely to go to gym 
@@ -37,7 +37,7 @@ gym_pred
 x.test$Gymcode
 
 table(x.test$Gymcode, gym_pred)   #confussion matrix
-##wrog classifications      Error Rate
+##wrog classifications 22%     Error Rate
 plot(x.test$Age, x.test$Gymcode, col='red', pch=16)
 points(x.test$Age, gym_pred, col='green', lwd=3)
 
