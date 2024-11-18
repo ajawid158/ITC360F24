@@ -1,6 +1,6 @@
 ##+++++++++++++++++++++++++++++++++++++++++++++##
 #                                               #
-#           Clustering//KMeans-Clustering       #
+#           Clustering//K Means-Clustering       #
 #                                               #
 ##++++++++++++++++++++++++++++++++++++++++++++++#
 library(factoextra)
