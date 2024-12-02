@@ -51,8 +51,9 @@ ibiscr = ibiscr %>%
   tm_map(stemDocument)
 ibiscr[[2]]$content
 
-fr1=freq_terms(ibiscr, 5)   #5 most frequent words
+fr1=freq_terms(ibiscr, 10)   #5 most frequent words
 plot(fr1)
+
 
 
 
@@ -97,6 +98,7 @@ barplot(ibis_freq,
         names.arg = ibis_names, 
         ylim=c(0,20))
 
+#Supervised
 ####Sentiment analysis 
 #create your sentiment variable
 View(ibis)
